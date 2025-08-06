@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/construction-website/static/css/main.10bdceda.css",
-    "main.js": "/construction-website/static/js/main.694ee0c4.js",
+    "main.js": "/construction-website/static/js/main.aa595b9a.js",
     "static/media/F.jpg": "/construction-website/static/media/F.53f44da714a4d1957aa5.jpg",
     "static/media/dam.jpg": "/construction-website/static/media/dam.6624b30b6ab283a27286.jpg",
     "static/media/b7.jpg": "/construction-website/static/media/b7.1fb3044c1a0bb978e347.jpg",
@@ -43,10 +43,10 @@
     "static/media/b5.jpg": "/construction-website/static/media/b5.54a071bb2b5e3e110a39.jpg",
     "index.html": "/construction-website/index.html",
     "main.10bdceda.css.map": "/construction-website/static/css/main.10bdceda.css.map",
-    "main.694ee0c4.js.map": "/construction-website/static/js/main.694ee0c4.js.map"
+    "main.aa595b9a.js.map": "/construction-website/static/js/main.aa595b9a.js.map"
   },
   "entrypoints": [
     "static/css/main.10bdceda.css",
-    "static/js/main.694ee0c4.js"
+    "static/js/main.aa595b9a.js"
   ]
 }
