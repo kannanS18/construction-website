@@ -1,0 +1,182 @@
+/* ===== MOBILE HORIZONTAL SCROLL FIX ===== */
+/* Import this file to eliminate all horizontal scrolling issues */
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Elements */
+.home,
+.services-page,
+.bridge,
+.contact-page,
+.construction-footer {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Image Elements */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Flex Containers */
+.home-About,
+.services-cards-wrap,
+.three-img-row,
+.bridge-detail-layout,
+.construction-footer-main {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Grid Containers */
+.bridge-gallery-grid {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Text Elements */
+h1, h2, h3, h4, h5, h6, p, span, div {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Form Elements */
+input, select, textarea, button {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Modal Elements */
+.service-modal,
+.service-modal-content {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Specific Mobile Fixes */
+@media (max-width: 768px) {
+  /* Force single column layout */
+  .home-About,
+  .bridge-detail-layout {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  /* Ensure cards don't exceed viewport */
+  .service-card,
+  .img-card {
+    width: 100% !important;
+    max-width: calc(100vw - 2rem) !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Fix navigation width */
+  .nav-links {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+  
+  /* Fix slideshow */
+  .slideshow-container,
+  .slide {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+  
+  /* Fix parallax sections */
+  .services-parallax {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+}
+
+/* Ultra Small Screens */
+@media (max-width: 480px) {
+  /* Reduce padding to prevent overflow */
+  .home-About,
+  .services-cards-wrap,
+  .construction-footer-main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Ensure text doesn't overflow */
+  .slide-caption,
+  .slide-location,
+  .bridge-slider-title {
+    max-width: 90vw !important;
+    padding: 0.5rem !important;
+    font-size: clamp(1rem, 4vw, 1.5rem) !important;
+  }
+  
+  /* Fix modal width */
+  .service-modal-content {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Prevent specific elements from causing overflow */
+.about-underline,
+.bridge-title-underline {
+  max-width: 100% !important;
+}
+
+.bridge-square {
+  display: none !important; /* Hide decorative elements on mobile */
+}
+
+@media (min-width: 768px) {
+  .bridge-square {
+    display: block !important;
+  }
+}
+
+/* Scrollbar styling for mobile */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Ensure no element can cause horizontal scroll */
+body > * {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Fix any remaining viewport issues */
+@media (max-width: 768px) {
+  .slideshow-container {
+    height: 60vh !important;
+  }
+  
+  .services-parallax {
+    height: 40vh !important;
+    background-attachment: scroll !important;
+  }
+  
+  .bridge-slider {
+    height: 50vh !important;
+  }
+}

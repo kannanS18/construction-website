@@ -1,0 +1,279 @@
+/* ===== MEDIA PAGE - MOBILE FIRST RESPONSIVE ===== */
+
+.media-page {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: #f7f9fc;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ===== HEADER SECTION ===== */
+.media-header {
+  background: linear-gradient(90deg, #0d1b7e 0%, #1e3a8a 100%);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(21,9,150,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.media-header h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.media-header p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #f3f3f3;
+  margin: 0 auto;
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+/* ===== CONTENT SECTION ===== */
+.media-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 16px rgba(21,9,150,0.07);
+  overflow: hidden;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+/* ===== YEARS SECTION ===== */
+.media-years {
+  width: 100%;
+  background: #f0f3fa;
+  border-bottom: 2px solid #e0e6f7;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.media-years ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  min-width: max-content;
+}
+
+.media-years li {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #150996;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.media-years li.active,
+.media-years li:hover {
+  background: #e6eaff;
+  color: #ffd600;
+  border-bottom: 3px solid #ffd600;
+  font-weight: 600;
+}
+
+/* ===== RELEASES SECTION ===== */
+.media-releases {
+  width: 100%;
+  padding: 1.5rem;
+  min-height: 300px;
+  box-sizing: border-box;
+}
+
+.media-releases h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #150996;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.media-releases ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.media-releases li {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  transition: transform 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.media-releases li:hover {
+  transform: translateX(4px);
+  background: rgba(21,9,150,0.02);
+}
+
+.media-releases li a {
+  color: #0a48d0;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffd600;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0.25rem 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.media-releases li a:hover {
+  color: #ffd600;
+  border-bottom: 2px solid #ffd600;
+  padding-left: 0.5rem;
+}
+
+.media-empty {
+  color: #888;
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 2rem;
+  background: rgba(136,136,136,0.05);
+  border-radius: 8px;
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .media-header {
+    padding: 3rem 2rem;
+  }
+
+  .media-content {
+    border-radius: 16px;
+    margin: 2.5rem auto 0 auto;
+    width: 90%;
+  }
+
+  .media-years {
+    border-bottom: none;
+    border-right: 2px solid #e0e6f7;
+    overflow-x: visible;
+  }
+
+  .media-years ul {
+    flex-direction: column;
+    min-width: auto;
+  }
+
+  .media-years li {
+    padding: 0.75rem 1.5rem;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .media-years li.active,
+  .media-years li:hover {
+    border-bottom: none;
+    border-left: 3px solid #ffd600;
+  }
+
+  .media-releases {
+    padding: 2rem 2.5rem;
+  }
+
+  .media-releases h2 {
+    text-align: left;
+  }
+}
+
+/* ===== DESKTOP RESPONSIVE ===== */
+@media (min-width: 1024px) {
+  .media-header {
+    padding: 4rem 2rem;
+  }
+
+  .media-content {
+    flex-direction: row;
+    margin: 3rem auto 0 auto;
+  }
+
+  .media-years {
+    min-width: 140px;
+    max-width: 140px;
+    padding: 2rem 0;
+  }
+
+  .media-years li {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .media-releases {
+    flex: 1;
+    padding: 2.5rem 3rem;
+    min-height: 400px;
+  }
+
+  .media-releases li {
+    font-size: 1.15rem;
+  }
+}
+
+/* ===== LARGE DESKTOP ===== */
+@media (min-width: 1200px) {
+  .media-years {
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .media-releases {
+    padding: 3rem 4rem;
+  }
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+.media-years::-webkit-scrollbar {
+  height: 4px;
+}
+
+.media-years::-webkit-scrollbar-thumb {
+  background: #6ec1e4;
+  border-radius: 2px;
+}
+
+.media-years::-webkit-scrollbar-track {
+  background: #f0f3fa;
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+  .media-years li,
+  .media-releases li,
+  .media-releases li a {
+    transition: none;
+  }
+  
+  .media-releases li:hover {
+    transform: none;
+  }
+}
+
+/* ===== FOCUS STYLES ===== */
+.media-years li:focus,
+.media-releases li a:focus {
+  outline: 2px solid #150996;
+  outline-offset: 2px;
+}

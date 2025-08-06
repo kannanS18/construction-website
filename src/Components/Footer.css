@@ -1,0 +1,228 @@
+.construction-footer {
+  background: #ffffff;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.Footer-line{
+  width: 100%;
+  height: 1px;
+  background-color: #150996;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.construction-footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  gap:12px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 48px 32px 24px 32px;
+  box-sizing: border-box;
+}
+.construction-footer-about {
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -80px;
+  margin-top: -30px;
+  gap: 12px;
+}
+
+.construction-footer-logo {
+  width: 120px;
+  margin-bottom: -10px;
+}
+.construction-footer-description {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.construction-footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.construction-footer-socials a {
+  color: #000000;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.construction-footer-socials a:hover {
+  color: #ffd600;
+}
+.construction-footer-links {
+  flex: 1 1 170px;
+  min-width: 150px;
+  max-width: 200px;
+    margin-left: 15px;
+}
+.construction-footer-links h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffd500;
+  letter-spacing: 1px;
+}
+.construction-footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.construction-footer-links li {
+  margin-bottom: 8px;
+}
+.construction-footer-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.construction-footer-links a:hover {
+  color: #ffd600;
+  text-decoration: underline;
+}
+
+.construction-footer-contactus {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 260px;
+  margin-left: 10px;
+  margin-right: -50px;
+}
+.construction-footer-contactus h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffd600;
+  letter-spacing: 1px;
+}
+.construction-footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.construction-footer-contact-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #000000;
+}
+.construction-footer-phone,
+.construction-footer-email {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.construction-footer-phone:hover,
+.construction-footer-email:hover {
+  color: #ffd600;
+  text-decoration: underline;
+}
+.map-icon {
+  color: #ffd600;
+  font-size: 1.1em;
+}
+
+.construction-footer-bottom {
+  background: #150996;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 1rem 10px 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .construction-footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .construction-footer-about,
+  .construction-footer-links,
+  .construction-footer-contactus {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 18px 0; 
+  }
+  .construction-footer-about {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+  .construction-footer-links {
+    margin-bottom: 18px;
+  }
+  .construction-footer-contactus {
+    margin-bottom: 0;
+  }
+  .construction-footer-logo {
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  .construction-footer-links ul,
+  .construction-footer-contact-list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .construction-footer-main {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .construction-footer-bottom {
+    font-size: 0.9rem;
+    padding: 12px 1rem 8px 1rem;
+  }
+
+  .construction-footer-about,
+  .construction-footer-links,
+  .construction-footer-contactus {
+    margin-bottom: 12px;
+  }
+  .construction-footer-about {
+    margin-top: -8px;
+  }
+  .construction-footer-links {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .construction-footer-contactus {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .construction-footer-bottom {
+    font-size: 0.93rem;
+    padding: 8px 0 6px 0;
+  }
+  .construction-footer-links h2,
+  .construction-footer-contactus h2 {
+    font-size: 1rem;
+  }
+  .construction-footer-description {
+    font-size: 0.95rem;
+  }
+}
