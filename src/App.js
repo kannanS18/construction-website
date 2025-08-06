@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -34,6 +34,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
 
         <Route path="/we-build/bridges" element={<Bridge />} />
         <Route path="/we-build/dams" element={<Dams />} />
